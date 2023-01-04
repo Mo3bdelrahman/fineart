@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="head_id">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohi Fine Art - Categories</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11058402861"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-11058402861");
+    </script>
+  </head>
+  <body>
+    <!--navbar-->
+    <div id="navlocation"></div>
+
+    <!--categoris products section -->
+    <div class="categoriessec container p-1">
+      <!--heading section-->
+      <div class="bannarvid d-flex justify-content-center align-items-center">
+        <video
+          class="bannervideo"
+          src="vid/catgeoriesbannar.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div class="text-center" style="z-index: 5">
+          <h1 class="fw-bolder" id="bannerheader">OUR CATEGORIES</h1>
+        </div>
+      </div>
+
+      <div
+        id="catCategoryId"
+        class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 justify-content-center align-items-center mb-3"
+      ></div>
+      <div class="container"><span class="hline"></span></div>
+
+      <div
+        id="singleiteamId"
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center align-items-center mb-5"
+      ></div>
+    </div>
+    <!-- The image Modal -->
+    <div class="modal fade" id="imgmodal">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div
+          class="modal-content text-center"
+          style="background-color: rgba(00, 00, 00, 0.7)"
+        >
+          <!-- Modal Header -->
+          <div class="modal-header" style="border-color: #d6a554">
+            <h3 class="cat-name">
+              <a href="#"><img src="images/navlogo.png" /></a>
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              id="closebtn"
+              data-bs-dismiss="modal"
+              style="background-color: #d6a554"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <img
+              src="images/iteams/ACCESORIES/acces1.jpg"
+              id="modalimgchange"
+              width="80%"
+              alt="Mohie FineArt's Product Image"
+            />
+          </div>
+
+          <!-- Modal footer -->
+          <div class=" " style="border-top: 2px solid #d6a554">
+            <form action="" id="modalform">
+              <input
+                type="text"
+                class="modal-input"
+                type="text"
+                placeholder="Enter Your Name"
+                id="username"
+                required
+                autofocus
+              />
+              <input
+                type="text"
+                class="modal-input"
+                type="number"
+                placeholder="Enter Your Phone Number"
+                id="phonenum"
+                required
+              />
+              <button type="submit" class="btn modal-btn" id="sendmail">
+                SEND
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sent Modal -->
+    <div class="modal fade" id="sendmodal">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div
+          class="modal-content text-center"
+          style="background-color: rgba(00, 00, 00, 0.7)"
+        >
+          <!-- Modal Header -->
+          <div class="modal-header" style="border-color: #d6a554">
+            <h3 class="cat-name">
+              <a href="#"><img src="images/navlogo.png" /></a>
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              style="background-color: #d6a554"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h1>Mail was sent</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="upbtn"> <i class="fa-solid fa-chevron-up iconup"></i></a>
+    <i class=></i>
+
+    <!--footer-->
+    <div id="footerlocation"></div>
+
+    <!--scripts-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/navcoponent.js"></script>
+    <script src="js/footercomponent.js"></script>
+    <script src="js/categoriesjs.js"></script>
+    <script src="js/singlecomponent.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/sendmail.js"></script>
+    <script src="js/upbtn.js"></script>
+    <script>
+      let n_Id = "navlocation";
+      document
+        .getElementById(n_Id)
+        .addEventListener("load", navCreatorFunc(n_Id));
+      let c_Id = "catCategoryId";
+      document
+        .getElementById(c_Id)
+        .addEventListener("load", catCreatorFunc(c_Id, 0));
+      let f_Id = "footerlocation";
+      document
+        .getElementById(f_Id)
+        .addEventListener("load", footerCreatorFunc(f_Id));
+      let s_Id = "singleiteamId";
+      let h_Id = "bannerheader";
+      let mod_Id = "modalimgchange";
+      let user_Id = "username";
+      let phone_Id = "phonenum";
+      let sendbtn_Id = "sendmail";
+      
+    </script>
+  </body>
+</html>
