@@ -1,32 +1,89 @@
-
 /* OUR DATA */
 /* --------------------------------------OUR DATA variables ------------------*/
 /*categories */
-let allcatName = ['ACCESORIES','OFFICE','BEDROOM','DININGROOM','COMMODE','PRAVANS','NAJAF','LIVINGROOM','ABARA','BAHUI','CHAIRS','CONSOL','DESK','KOFIZA','MIRRORS','MOPLE','SECRTARY','SEMNEYA','SHOSE CUPBOARD','SOFA','STAND','TABLE','TV STAND','VITRINE'];
-let aliasName = ['acces','office','bed','dining','comm','pravan','najaf','living','abara','bahui','chairs','consol','desk','kofiza','mirror','mople','secrtary','semneya','shose','sofa','stand','table','tv','vitrine'];
-let allnum = [22,17,45,34,42,8,17,12,5,73,15,13,9,4,18,13,4,2,3,18,25,111,2,61];
+let allcatName = [
+  "ACCESORIES",
+  "OFFICE",
+  "BEDROOM",
+  "DININGROOM",
+  "COMMODE",
+  "PRAVANS",
+  "NAJAF",
+  "LIVINGROOM",
+  "ABARA",
+  "BAHUI",
+  "CHAIRS",
+  "CONSOL",
+  "DESK",
+  "KOFIZA",
+  "MIRRORS",
+  "MOPLE",
+  "SECRTARY",
+  "SEMNEYA",
+  "SHOSE CUPBOARD",
+  "SOFA",
+  "STAND",
+  "TABLE",
+  "TV STAND",
+  "VITRINE",
+];
+let aliasName = [
+  "acces",
+  "offi",
+  "bedroom",
+  "diningroom",
+  "commod",
+  "pravans",
+  "najaf",
+  "livingroom",
+  "abara",
+  "bahu",
+  "chair",
+  "consol",
+  "desks",
+  "kofiz",
+  "mirr",
+  "mopl",
+  "secrt",
+  "semneya",
+  "shosecu",
+  "sofaa",
+  "stan",
+  "tabl",
+  "tvs",
+  "vitr",
+];
+let allnum = [
+  21, 17, 62, 33, 42, 12, 17, 72, 7, 79, 39, 13, 17, 6, 19, 18, 8, 2, 7, 41, 38,
+  170, 9, 80,
+];
 
 /* --------------------------------------functios ------------------*/
 /*categories creator *---if main t=1 else t=0---* */
 
-function catCreatorFunc(cId,t){  
-   if(t == true){
+function catCreatorFunc(cId, t) {
+  if (t == true) {
     for (let i = 0; i < 8; i++) {
-        
-        let singleiteam =`
+      let singleiteam = `
         <div class="single-cat col text-center">
         <div>
-            <a href="categories.html"><img src="images/home/cat${i+1}.jpg" class="cat-img" alt="Mohie FineArt's Product Image"></a>
+            <a href="categories.html"><img src="images/home/cat${
+              i + 1
+            }.jpg" class="cat-img" alt="Mohie FineArt's Product Image"></a>
         </div>
         <div class="cat-content text-center p-3">
-        <h3 class="cat-name goldencolor"><a href="categories.html">${allcatName[i]}</a></h3>
+        <h3 class="cat-name goldencolor"><a href="categories.html">${
+          allcatName[i]
+        }</a></h3>
         </div>
         </div>
         `;
-        let x = document.getElementById(cId); x.insertAdjacentHTML("beforeend", singleiteam);};}
-    else{
-            for (let i = 0; i < allcatName.length; i++) {
-                let singleiteam =`
+      let x = document.getElementById(cId);
+      x.insertAdjacentHTML("beforeend", singleiteam);
+    }
+  } else {
+    for (let i = 0; i < allcatName.length; i++) {
+      let singleiteam = `
                 <div class="single-cat col text-center">
                 
                 <div class="cat-content text-center p-3">
@@ -34,15 +91,8 @@ function catCreatorFunc(cId,t){
                 </div>
                 </div>
                 `;
-                let x = document.getElementById(cId);
-                x.insertAdjacentHTML("beforeend", singleiteam);
-                
-            }
-    
-        } };
-
-
-
-
-
-  
+      let x = document.getElementById(cId);
+      x.insertAdjacentHTML("beforeend", singleiteam);
+    }
+  }
+}
