@@ -114,6 +114,8 @@
                 type="text"
                 placeholder="Enter Your Name"
                 id="username"
+                pattern="[A-Za-z ]*$"
+                minlength="2"
                 required
                 autofocus
               />
@@ -123,6 +125,8 @@
                 type="number"
                 placeholder="Enter Your Phone Number"
                 id="phonenum"
+                pattern="^[0-9]*$"
+                minlength="7"
                 required
               />
               <button type="submit" class="btn modal-btn" id="sendmail">
