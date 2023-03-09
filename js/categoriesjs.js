@@ -20,7 +20,7 @@ let allcatName = [
   "MOPLE",
   "SECRETARY",
   "SEMNEYA",
-  "SHOSE CUPBOARD",
+  "SHOES CUPBOARD",
   "SOFA",
   "STAND",
   "TABLE",
